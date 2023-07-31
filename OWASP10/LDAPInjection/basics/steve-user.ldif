@@ -1,0 +1,15 @@
+dn: uid=steve,dc=example,dc=org
+uid: steve
+cn: steve
+sn: 3
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+loginShell: /bin/bash
+homeDirectory: /home/steve
+uidNumber: 14583102
+gidNumber: 14564100
+userPassword: steve_12@ae@02!
+mail: steve@steve.com
+description: He is the top worker of this organization
+telephoneNumber: 456321789

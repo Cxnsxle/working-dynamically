@@ -1,0 +1,15 @@
+dn: uid=elianne,dc=example,dc=org
+uid: elianne
+cn: elianne
+sn: 3
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+loginShell: /bin/bash
+homeDirectory: /home/elianne
+uidNumber: 14583102
+gidNumber: 14564100
+userPassword: iamsopretty
+mail: elianne@elianne.com
+description: The most beautiful girl she trust
+telephoneNumber: 312456987

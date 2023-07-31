@@ -1,0 +1,15 @@
+dn: uid=cxnsxle,dc=example,dc=org
+uid: cxnsxle
+cn: cxnsxle
+sn: 3
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+loginShell: /bin/bash
+homeDirectory: /home/cxnsxle
+uidNumber: 14583102
+gidNumber: 14564100
+userPassword: cxnsxle123
+mail: cxnsxle@cxnsxle.com
+description: The best hacker
+telephoneNumber: 987123654
