@@ -1,0 +1,63 @@
+# Nmap 7.93 scan initiated Mon Jul 31 17:47:40 2023 as: nmap -sCV -p21,22,80,139,445,3306,11111,22222,22223,33333,33334,44441,44444,55551,55555 -oN target 192.168.200.133
+Nmap scan report for 192.168.200.133
+Host is up (0.00011s latency).
+
+PORT      STATE SERVICE         VERSION
+21/tcp    open  ftp             vsftpd 3.0.3
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_drwxr-xr-x    2 0        0               6 Apr 12  2021 pub
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:192.168.200.128
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 3
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+22/tcp    open  ssh             OpenSSH 8.0 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 00242bae41baac52d15d4fad00ce3967 (RSA)
+|   256 1ae3c737522edcdd62610327551a866f (ECDSA)
+|_  256 24fde78089c557fdf3e5c92f01e16b30 (ED25519)
+80/tcp    open  http            Apache httpd 2.4.37 (())
+|_http-title: Apache HTTP Server Test Page powered by: Rocky Linux
+|_http-server-header: Apache/2.4.37 ()
+| http-methods: 
+|_  Potentially risky methods: TRACE
+139/tcp   open  netbios-ssn?
+445/tcp   open  microsoft-ds?
+3306/tcp  open  mysql?
+| fingerprint-strings: 
+|   NULL: 
+|_    Host '192.168.200.128' is not allowed to connect to this MariaDB server
+11111/tcp open  vce?
+22222/tcp open  easyengine?
+|_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
+22223/tcp open  unknown
+33333/tcp open  dgi-serv?
+33334/tcp open  speedtrace?
+44441/tcp open  http            Apache httpd 2.4.37 (())
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+|_http-server-header: Apache/2.4.37 ()
+| http-methods: 
+|_  Potentially risky methods: TRACE
+44444/tcp open  cognex-dataman?
+55551/tcp open  unknown
+55555/tcp open  unknown
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3306-TCP:V=7.93%I=7%D=7/31%Time=64C82BFD%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,4E,"J\0\0\x01\xffj\x04Host\x20'192\.168\.200\.128'\x20is\x20not\x20a
+SF:llowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server");
+MAC Address: 00:0C:29:69:CE:07 (VMware)
+Service Info: OS: Unix
+
+Host script results:
+|_smb2-time: Protocol negotiation failed (SMB2)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jul 31 17:52:39 2023 -- 1 IP address (1 host up) scanned in 298.38 seconds
