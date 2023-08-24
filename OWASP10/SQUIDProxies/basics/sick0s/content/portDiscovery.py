@@ -7,7 +7,7 @@ import requests
 # function to manage CTRL+c
 def def_handler(sig, frame):
     print("\n[!] Exiting...\n")
-    sys.exti(1)
+    sys.exit(1)
 
 # function to find out every port behind a Proxy
 def portDiscovery():
