@@ -1,0 +1,20 @@
+# Nmap 7.93 scan initiated Thu Aug 24 17:14:45 2023 as: nmap -sCV -p22,3128 -oN target 192.168.200.134
+Nmap scan report for 192.168.200.134
+Host is up (0.00022s latency).
+
+PORT     STATE SERVICE    VERSION
+22/tcp   open  ssh        OpenSSH 5.9p1 Debian 5ubuntu1.1 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 093d29a0da4814c165141e6a6c370409 (DSA)
+|   2048 8463e9a88e993348dbf6d581abf208ec (RSA)
+|_  256 51f6eb09f6b3e691ae36370cc8ee3427 (ECDSA)
+3128/tcp open  http-proxy Squid http proxy 3.1.19
+|_http-title: ERROR: The requested URL could not be retrieved
+|_http-server-header: squid/3.1.19
+| http-open-proxy: Potentially OPEN proxy.
+|_Methods supported: GET HEAD
+MAC Address: 00:0C:29:21:FD:50 (VMware)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Aug 24 17:15:01 2023 -- 1 IP address (1 host up) scanned in 16.40 seconds
